@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quotes-backend
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: quotes-backend
+        image: thabelo/quotes-backend
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+

@@ -1,0 +1,13 @@
+- ../../../base/quotes-frontend
+
+namePrefix: prod-
+
+namespace: prod
+
+images:
+  - name: thabelo/quotes-frontend
+    newTag: latest1
+
+replicas:
+  - name: quotes-frontend
+    count: 3

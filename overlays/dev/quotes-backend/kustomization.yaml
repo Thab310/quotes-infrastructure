@@ -1,0 +1,14 @@
+resources:
+- ../../../base/quotes-backend
+
+namePrefix: dev-
+
+namespace: dev
+
+images:
+  - name: thabelo/quotes-backend
+    newTag: v0.1.0
+
+replicas:
+  - name: quotes-backend
+    count: 1
