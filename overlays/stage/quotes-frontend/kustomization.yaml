@@ -6,7 +6,7 @@ namespace: stage
 
 images:
   - name: thabelo/quotes-frontend
-    newTag: latest1
+    newTag: latest
 
 replicas:
   - name: quotes-frontend

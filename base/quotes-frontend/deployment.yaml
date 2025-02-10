@@ -18,3 +18,6 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "200m"
+        env:
+        - name: BACKEND_API_URL
+          value: "http://quotes-backend:8080/api"
