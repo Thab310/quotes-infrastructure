@@ -1,6 +1,6 @@
 ---
 resources:
-- ../../../base/quotes-frontend
+  - ../../../base/quotes-frontend
 
 namePrefix: dev-
 

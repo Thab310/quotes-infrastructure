@@ -1,5 +1,5 @@
 resources:
-- ../../../base/quotes-backend
+  - ../../../base/quotes-backend
 
 namePrefix: prod-
 

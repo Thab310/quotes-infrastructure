@@ -1,4 +1,6 @@
-- ../../../base/quotes-frontend
+---
+resources:
+  - ../../../base/quotes-frontend
 
 namePrefix: stage-
 
