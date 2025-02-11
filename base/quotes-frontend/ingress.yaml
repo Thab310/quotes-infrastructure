@@ -9,7 +9,7 @@ spec:
   ingressClassName: nginx
   rules:
   - http:
-      paths:
+      paths: localhost
       - path: /
         pathType: Prefix
         backend:
@@ -17,10 +17,3 @@ spec:
             name: quotes-frontend
             port:
               number: 80
-      # - path: /api
-      #   pathType: Prefix
-      #   backend:
-      #     service:
-      #       name: quotes-backend
-      #       port:
-      #         number: 8080
