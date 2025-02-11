@@ -7,7 +7,7 @@ namespace: prod
 
 images:
   - name: thabelo/quotes-backend
-    newTag: latest
+    newTag: v0.1.0
 
 replicas:
   - name: quotes-backend
