@@ -4,8 +4,7 @@ kind: Kustomization
 resources:
   - ../../../base/quotes-frontend
 
-namePrefix: stage-
-namespace: stage
+namespace: frontend
 
 images:
   - name: thabelo/quotes-frontend
@@ -13,13 +12,5 @@ images:
 
 replicas:
   - name: quotes-frontend
-    count: 2
+    count: 1
 
-patches:
-  - patch: |-
-      - op: replace
-        path: /spec/rules/0/host
-        value: stage.quotes.com
-    target:
-      kind: Ingress
-      name: quotes-ingress
